@@ -1,0 +1,125 @@
+h1{
+    width: 100%;
+    text-align: center;
+}
+.title{
+    transition: all 2s linear;
+}
+.fadeOut{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.title{
+    visibility: visible;
+    opacity: 1;
+    
+}
+.fade-in-1{
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    text-align: center;
+    bottom: 100%;
+    transition: all 2s linear;
+}
+.fade-in-2{
+    width: 100%;
+    height: 50%;
+    position: fixed;
+    top: 100%;
+    text-align: center;
+    transition: all 2s linear;
+}
+.fade-in-3{
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    position: fixed;
+    text-align:left;
+    transition: all 2s linear;
+}
+.fade-in-4{
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    position: fixed;
+    text-align:center;
+    transition: all 2s linear;
+}
+.fade-in-5{
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    position: fixed;
+    text-align:right;
+    transition: all 2s linear;
+}
+.fade-in-6{
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    position: fixed;
+    text-align:left;
+    transition: all 2s linear;
+}
+.fade-in-7{
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    position: fixed;
+    text-align:center;
+    transition: all 2s linear;
+}
+.fade-in-8{
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    position: fixed;
+    text-align:right;
+    transition: all 2s linear;
+}
+.wish{
+    visibility: hidden;
+    opacity: 0;
+    padding: 33%;
+    width: 33%;
+    position: fixed;
+    top: 0%;
+    text-align: center;
+    transition: all 2s linear;
+}
+.header{
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    text-align: center;
+    transition: all 2s linear;
+}
+.final1{
+    visibility: hidden;
+    opacity: 0;
+    width: 33%;
+    position: fixed;
+    top: 0%;
+    text-align: left;
+    transition: all 2s linear;
+}
+.final2{
+    visibility: hidden;
+    opacity: 0;
+    width: 33%;
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    text-align: right;
+    transition: all 2s linear;
+}
+

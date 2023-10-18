@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mừng Ngày 20-10</title>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title" class="title">Chúc mừng Ngày Em Iu Ngày Phụ Nữ Việt Nam 20-10</h1>
+        
+        <div id="pic1" class="fade-in-1">
+            <img src="D:\website20_10\images\fadeIn1.jpeg" style="height: 100%;">
+        </div>
+        <div id="pic2" class="fade-in-2">
+            <img src="D:\website20_10\images\fadeIn2.jpeg" style="height: 100%;">
+        </div>
+        <div id="pic3" class="fade-in-3">
+            <img src="D:\website20_10\images\fadeIn3.jpeg" style="width: 33%;">
+        </div>
+        <div id="pic4" class="fade-in-4">
+            <img src="D:\website20_10\images\fadeIn4.jpeg" style="width: 33%;">
+        </div>
+        <div id="pic5" class="fade-in-5">
+            <img src="D:\website20_10\images\fadeIn5.jpeg" style="width: 33%;">
+        </div>
+        <div id="pic6" class="fade-in-6">
+            <img src="D:\website20_10\images\fadeIn6.jpeg" style="width: 33%;">
+        </div>
+        <div id="pic7" class="fade-in-7">
+            <img src="D:\website20_10\images\fadeIn7.jpeg" style="width: 33%;">
+        </div>
+        <div id="pic8" class="fade-in-8">
+            <img src="D:\website20_10\images\fadeIn8.jpeg" style="width: 33%;">
+        </div>
+        <div class="wish" id="wish1">
+            <h2>Gửi em người con gái anh thương 
+                ngày hôm nay thật đẹp để nụ cười trên môi em thật tươi</h2>
+        </div>
+        <div class="wish" id="wish2">
+            <h2>Anh yêu em nhiều lắm</h2>
+        </div>
+        <div class="final1" id="final1">
+            <b style="font-size: 600px;">I</b>
+        </div>
+        <div class="final2" id="final2">
+            <b style="font-size: 600px;">U</b>
+        </div>
+        <div class="header" id="header1">
+            <h2>Em là nàng thơ của lòng anh</h2>
+        </div>
+
+    </div>
+    <script>
+        var title = document.getElementById("title");
+        var pic1 = document.getElementById("pic1");
+        var pic2 = document.getElementById("pic2");
+        var pic3 = document.getElementById("pic3");
+        var pic4 = document.getElementById("pic4");
+        var pic5 = document.getElementById("pic5");
+        var pic6 = document.getElementById("pic6");
+        var pic7 = document.getElementById("pic7");
+        var pic8 = document.getElementById("pic8");
+        var wish1 = document.getElementById("wish1");
+        var wish2 = document.getElementById("wish2");
+        var header1 = document.getElementById("header1");
+        var final1 = document.getElementById("final1");
+        var final2 = document.getElementById("final2");
+        
+        var timer = 0;
+        setInterval(setTimer,1000);
+
+        function setTimer(){
+            ++timer;
+            console.log(timer);
+            if(timer>2){
+                title.style.visibility = "hidden";
+                title.style.opacity = "0";
+                title.style.transition = "all 2s linear;";
+                
+            }
+            if(timer > 4){
+                pic1.style.bottom = "50%";
+                pic1.style.transition = "all 2s linear;";
+                pic2.style.top = "50%";
+                pic2.style.transform = "all 2s linear;"
+            }
+            if(timer>7){
+                pic1.style.visibility = "hidden";
+                pic1.style.opacity = "0";
+                pic1.style.transition = "all 2s linear;";
+                pic2.style.visibility = "hidden";
+                pic2.style.opacity = "0";
+                pic2.style.transition = "all 2s linear;";
+            }
+            if(timer>9){
+                pic3.style.visibility = "visible";
+                pic3.style.opacity = "1";
+                pic3.style.transition = "all 2s linear;";
+                
+                header1.style.visibility = "visible";
+                header1.style.opacity = "1";
+                header1.style.transition = "all 2s linear;";
+            }
+            if(timer>10){
+                pic4.style.visibility = "visible";
+                pic4.style.opacity = "1";
+                pic4.style.transition = "all 2s;";
+            }
+            if(timer>11){
+                pic5.style.visibility = "visible";
+                pic5.style.opacity = "1";
+                pic5.style.transition = "all 2s;";
+            }
+            if(timer>12){
+                header1.style.visibility = "hidden";
+                header1.style.opacity = "0";
+                header1.style.transition = "all 6s linear;";
+
+                pic3.style.visibility = "hidden";
+                pic3.style.opacity = "0";
+                pic3.style.transition = "all 2s linear;";
+            }
+            if(timer>13){
+                pic4.style.visibility = "hidden";
+                pic4.style.opacity = "0";
+                pic4.style.transition = "all 2s linear;";
+            }
+            if(timer>14){
+                pic5.style.visibility = "hidden";
+                pic5.style.opacity = "0";
+                pic5.style.transition = "all 2s linear;";
+            }
+            if(timer>15){
+                pic6.style.visibility = "visible";
+                pic6.style.opacity = "1";
+                pic6.style.transition = "all 2s linear;";
+
+                pic8.style.visibility = "visible";
+                pic8.style.opacity = "1";
+                pic8.style.transition = "all 2s linear;";
+            }
+            if(timer>16){
+                wish1.style.visibility = "visible";
+                wish1.style.opacity = "1";
+                wish1.style.transition = "all 2s linear;";
+            }
+            if(timer>18){
+                wish1.style.visibility = "hidden";
+                wish1.style.opacity = "0";
+                wish1.style.transition = "all 2s linear;";
+            }
+            if(timer>19){
+                wish2.style.visibility = "visible";
+                wish2.style.opacity = "1";
+                wish2.style.transition = "all 2s linear;";
+            }
+            if(timer>21){
+                pic6.style.visibility = "hidden";
+                pic6.style.opacity = "0";
+                pic6.style.transition = "all 2s linear;";
+                pic8.style.visibility = "hidden";
+                pic8.style.opacity = "0";
+                pic8.style.transition = "all 2s linear;";
+                wish2.style.visibility = "hidden";
+                wish2.style.opacity = "0";
+                wish2.style.transition = "all 2s linear;";
+            }
+            if(timer>23){
+                final1.style.visibility = "visible";
+                final1.style.opacity = "1";
+                final1.style.transition = "all 2s linear;";
+            }
+            if(timer>25){
+                pic7.style.visibility = "visible";
+                pic7.style.opacity = "1";
+                pic7.style.transition = "all 2s linear"; 
+            }
+            if(timer>27){
+                final2.style.visibility = "visible";
+                final2.style.opacity = "1";
+                final2.style.transition = "all 2s linear";
+            }
+        }
+
+
+    </script>
+</body>
+</html>
