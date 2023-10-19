@@ -52,9 +52,9 @@
         </div>
 
     </div>
-    <div style="width: 100px; height: 10px ;">
-        <video controls autoplay>
-            <source src="../bgm/bgm.mp4" type="video/mp4">
+    <div style="width: 100px; height: 10px ;opacity: 1;visibility: hidden;">
+        <video id="bgm" autoplay muted loop>
+            <source src="D:\website20_10\bgm\bgm.mp4" type="video/mp4">
           Your browser does not support the audio element.
         </video>
     </div>
@@ -74,7 +74,9 @@
         var header1 = document.getElementById("header1");
         var final1 = document.getElementById("final1");
         var final2 = document.getElementById("final2");
-        
+        var bgm = document.getElementById("bgm");
+
+        bgm.muted = false;
         var timer = 0;
         setInterval(setTimer,1000);
 
