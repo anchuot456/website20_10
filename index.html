@@ -52,9 +52,9 @@
         </div>
 
     </div>
-    <div style="width: 100px; height: 10px ;opacity: 1;visibility: hidden;">
-        <video id="bgm" autoplay muted loop>
-            <source src="D:\website20_10\bgm\bgm.mp4" type="video/mp4">
+    <div id="video" style="height: 100% ;opacity: 1;visibility: hidden;text-align: center;">
+        <video controls autoplay muted loop style="height: 100%;">
+            <source src="D:\website20_10\video\video.mp4" type="video/mp4">
           Your browser does not support the audio element.
         </video>
     </div>
@@ -74,9 +74,8 @@
         var header1 = document.getElementById("header1");
         var final1 = document.getElementById("final1");
         var final2 = document.getElementById("final2");
-        var bgm = document.getElementById("bgm");
+        var video = document.getElementById("video");
 
-        bgm.muted = false;
         var timer = 0;
         setInterval(setTimer,1000);
 
@@ -190,6 +189,22 @@
                 final2.style.visibility = "visible";
                 final2.style.opacity = "1";
                 final2.style.transition = "all 2s linear";
+            }
+            if(timer>29){
+                final1.style.visibility = "hidden";
+                final1.style.opacity = "0";
+                final1.style.transition = "all 2s linear;";
+                final2.style.visibility = "hidden";
+                final2.style.opacity = "0";
+                final2.style.transition = "all 2s linear;";
+                pic7.style.visibility = "hidden";
+                pic7.style.opacity = "0";
+                pic7.style.transition = "all 2s linear;";
+            }
+            if(timer>30){
+                video.style.visibility = "visible";
+                video.style.opacity = "1";
+                video.style.transition = "all 2s linear;";
             }
         }
 
